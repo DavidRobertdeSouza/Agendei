@@ -70,12 +70,12 @@ export default function Login() {
  return (
    <KeyboardAvoidingView style={styles.background}>
      <View style={styles.containerLogo}>
-       <Animated.Image 
+       <Animated.Image
        style={{
         width: logo.x,
         height: logo.y
        }}
-       source={require('./src/assets/logo.png')}
+       source={require('../../assets/logo.png')}
        />
      </View>
 

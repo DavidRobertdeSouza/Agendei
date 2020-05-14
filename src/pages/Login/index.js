@@ -145,14 +145,16 @@ const styles = StyleSheet.create({
   textentre:{
     fontSize: 20,
     width: '95%',
-    height: 30,
+    height: 40,
     fontStyle: 'italic',
+    color: '#FFF'
   },
   textentre2:{
     fontSize: 16,
     width: '95%',
     height: 50,
     fontStyle: 'italic',
+    color: '#FFF'
   },
   input:{
     backgroundColor: '#FFF',

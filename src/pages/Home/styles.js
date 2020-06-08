@@ -7,13 +7,13 @@ export const Container = styled.ScrollView.attrs({
   background-color: #fff;
 `;
 
-export const Card = styled.View`
+export const Card = styled.TouchableOpacity`
   height: 170;
   width: 100%;
   border-width: 1;
   border-color: #c8c8c8;
   border-radius: 20;
-  margin-top: 10;
+  margin-top: 20;
   justify-content: center;
   align-items: center;
 `;
@@ -44,6 +44,7 @@ export const CardPromo = styled.Text`
 
 export const ViewSub = styled.View`
   justify-content: flex-start;
+  margin-top: 20;
 `;
 
 export const Subtitle = styled.Text`

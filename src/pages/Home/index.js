@@ -10,7 +10,7 @@ import {
   CardPromo,
 } from './styles';
 
-export default function Home() {
+export default function Home({navigation}) {
   return (
     <>
       <StatusBar barStyle="light-content" backgroundColor="#630094" />
@@ -36,7 +36,7 @@ export default function Home() {
         <ViewSub>
           <Subtitle>Eventos e Promoções</Subtitle>
         </ViewSub>
-        <Card elevation={3}>
+        <Card onPress={() => navigation.navigate('Profile')} elevation={3}>
           <CardPromo>Dia da Beleza</CardPromo>
         </Card>
       </Container>

@@ -12,10 +12,10 @@ import {
   Keyboard,
 } from 'react-native';
 
-export default function Login({navigation}) {
+export default function Profile({navigation}) {
   const [offset] = useState(new Animated.ValueXY({x: 0, y: 80}));
   const [opacity] = useState(new Animated.Value(0));
-  const [logo] = useState(new Animated.ValueXY({x: 200, y: 230}));
+  const [logo] = useState(new Animated.ValueXY({x: 500, y: 230}));
 
   useEffect(() => {
     keyboardDidShowListener = Keyboard.addListener(
@@ -31,11 +31,11 @@ export default function Login({navigation}) {
       Animated.spring(offset.y, {
         toValue: 0,
         speed: 4,
-        bounciness: 20,
+        bounciness: 0,
       }),
       Animated.timing(opacity, {
         toValue: 1,
-        duration: 800,
+        duration: 10,
       }),
     ]).start();
   }, [keyboardDidHide, keyboardDidShow, offset.y, opacity]);
@@ -74,7 +74,7 @@ export default function Login({navigation}) {
             width: logo.x,
             height: logo.y,
           }}
-          source={require('../../assets/img_logo.png')}
+          source={require('../../assets/perfil.png')}
         />
       </View>
 
@@ -86,39 +86,29 @@ export default function Login({navigation}) {
             transform: [{translateY: offset.y}],
           },
         ]}>
-        <View style={styles.quadrado}>
-          <Text style={styles.textentre}>Entre</Text>
-          <Text style={styles.textentre2}>
-            Para encontrar lugares {'\n'}incríveis perto de você
-          </Text>
-          <TextInput
-            style={styles.input}
-            placeholder="E-mail"
-            textAlign={'center'}
-            autoCorrect={false}
-            onChangeText={() => {}}
-          />
+        <Text style={styles.textNome}>Nome</Text>
 
-          <TextInput
-            style={styles.input}
-            placeholder="Senha"
-            textAlign={'center'}
-            autoCorrect={false}
-            onChangeText={() => {}}
-          />
+        <TextInput
+          style={styles.input}
+          placeholder="(00) 00000-0000"
+          placeholderTextColor="#FFF"
+          textAlign={'center'}
+          autoCorrect={false}
+          onChangeText={() => {}}
+        />
 
-          <TouchableOpacity
-            onPress={() => navigation.navigate('Home')}
-            style={styles.btnSubmit}>
-            <Text style={styles.SubmitText}>Acessar</Text>
-          </TouchableOpacity>
+        <TextInput
+          style={styles.input}
+          placeholder="exemplo@exemplo.com"
+          placeholderTextColor="#FFF"
+          textAlign={'center'}
+          autoCorrect={false}
+          onChangeText={() => {}}
+        />
 
-          <TouchableOpacity
-            onPress={() => navigation.navigate('Inscreva')}
-            style={styles.btnRegister}>
-            <Text style={styles.RegisterText}>Criar conta gratuita</Text>
-          </TouchableOpacity>
-        </View>
+        <TouchableOpacity style={styles.btnSubmit}>
+          <Text style={styles.SubmitText}>Editar</Text>
+        </TouchableOpacity>
       </Animated.View>
     </KeyboardAvoidingView>
   );
@@ -138,48 +128,33 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
+    justifyContent: 'center',
     width: '90%',
   },
-  quadrado: {
-    width: '90%',
-    height: '95%',
-    alignItems: 'center',
-    paddingTop: 20,
-    paddingBottom: 20,
-    backgroundColor: '#FFF',
-    borderRadius: 22,
-  },
-  textentre: {
-    fontSize: 29,
-    height: '15%',
-    alignItems: 'center',
+  textNome: {
+    fontSize: 20,
+    bottom: 50,
     fontStyle: 'italic',
-    color: '#630094',
-  },
-  textentre2: {
-    fontSize: 17,
-    alignItems: 'center',
-    height: 50,
-    fontStyle: 'italic',
-    color: '#630094',
+    color: '#FFF',
   },
   input: {
-    backgroundColor: '#FFF',
+    backgroundColor: '#701f9a',
     width: '90%',
+    color: '#FFF',
     marginBottom: 15,
     borderColor: '#630094',
-    color: '#222',
     fontStyle: 'italic',
     fontSize: 20,
     borderRadius: 20,
     borderWidth: 2,
-    padding: 10,
+    padding: 6,
   },
   btnSubmit: {
-    backgroundColor: '#630094',
+    backgroundColor: '#701f9a',
     width: '40%',
     height: 45,
     alignItems: 'center',
+    marginTop: 15,
     justifyContent: 'center',
     borderRadius: 20,
   },
@@ -187,12 +162,5 @@ const styles = StyleSheet.create({
     color: '#FFF',
     fontSize: 20,
     fontStyle: 'italic',
-  },
-  btnRegister: {
-    marginTop: 10,
-  },
-  RegisterText: {
-    color: '#000',
-    fontSize: 15,
   },
 });

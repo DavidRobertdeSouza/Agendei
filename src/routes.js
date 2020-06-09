@@ -10,8 +10,10 @@ import Login from './pages/Login';
 import Home from './pages/Home';
 import Profile from './pages/Profile';
 import Inscreva from './pages/Inscreva';
-import Teste from './pages/teste';
 import Cadastrado from './pages/Cadastrado';
+import Diary from './pages/Diary';
+import Search from './pages/Search';
+import Favorite from './pages/Favorite';
 
 export default function Routs() {
   const AuthRoute = createAppContainer(
@@ -25,7 +27,7 @@ export default function Routs() {
   const BottomNavigation = createAppContainer(
     createBottomTabNavigator({
       Seach: {
-        screen: Profile,
+        screen: Search,
         navigationOptions: {
           tabBarLabel: 'Busca',
           tabBarIcon: (
@@ -36,7 +38,7 @@ export default function Routs() {
           ),
         },
       },Favorite: {
-        screen: Profile,
+        screen: Favorite,
         navigationOptions: {
           tabBarLabel: 'Favoritos',
           tabBarIcon: (
@@ -59,7 +61,7 @@ export default function Routs() {
           ),
         },
       },Diary: {
-        screen: Profile,
+        screen: Diary,
         navigationOptions: {
           tabBarLabel: 'Agenda',
           tabBarIcon: (
@@ -134,12 +136,50 @@ export default function Routs() {
           };
         },
       },
-      Teste: {
-        screen: Teste,
+      Diary: {
+        screen: Diary,
         navigationOptions: () => {
-            return {
-              headerTitle: 'teste',
-            };
+          return {
+            headerLeft: (
+              <Icon style={{marginLeft:20}} name="angle-left" color="#FFF" size={18}/>
+            ),
+            headerTintColor: '#FFF',
+            headerStyle: {
+              backgroundColor: '#630094',
+            },
+            headerTitle:'Minha Agenda',
+            headerTitleAlign: 'center',
+          };
+        },
+      },Search: {
+        screen: Search,
+        navigationOptions: () => {
+          return {
+            headerLeft: (
+              <Icon style={{marginLeft:20}} name="angle-left" color="#FFF" size={18}/>
+            ),
+            headerTintColor: '#FFF',
+            headerStyle: {
+              backgroundColor: '#630094',
+            },
+            headerTitle:'Pesquisa',
+            headerTitleAlign: 'center',
+          };
+        },
+      },Favorite: {
+        screen: Favorite,
+        navigationOptions: () => {
+          return {
+            headerLeft: (
+              <Icon style={{marginLeft:20}} name="angle-left" color="#FFF" size={18}/>
+            ),
+            headerTintColor: '#FFF',
+            headerStyle: {
+              backgroundColor: '#630094',
+            },
+            headerTitle:'Meus Favoritos',
+            headerTitleAlign: 'center',
+          };
         },
       },
       Inscreva: {

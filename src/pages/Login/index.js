@@ -88,9 +88,7 @@ export default function Login({navigation}) {
         ]}>
         <View style={styles.quadrado}>
           <Text style={styles.textentre}>Entre</Text>
-          <Text style={styles.textentre2}>
-            Para encontrar lugares {'\n'}incríveis perto de você
-          </Text>
+
           <TextInput
             style={styles.input}
             placeholder="E-mail"
@@ -98,7 +96,6 @@ export default function Login({navigation}) {
             autoCorrect={false}
             onChangeText={() => {}}
           />
-
           <TextInput
             style={styles.input}
             placeholder="Senha"
@@ -106,13 +103,11 @@ export default function Login({navigation}) {
             autoCorrect={false}
             onChangeText={() => {}}
           />
-
           <TouchableOpacity
             onPress={() => navigation.navigate('Home')}
             style={styles.btnSubmit}>
             <Text style={styles.SubmitText}>Acessar</Text>
           </TouchableOpacity>
-
           <TouchableOpacity
             onPress={() => navigation.navigate('Inscreva')}
             style={styles.btnRegister}>
@@ -138,28 +133,27 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
+    justifyContent: 'center',
     width: '90%',
   },
   quadrado: {
     width: '90%',
-    height: '95%',
     alignItems: 'center',
-    paddingTop: 20,
-    paddingBottom: 20,
+    justifyContent: 'center',
+    paddingTop: 10,
+    paddingBottom: 10,
     backgroundColor: '#FFF',
     borderRadius: 22,
   },
   textentre: {
     fontSize: 29,
-    height: '15%',
-    alignItems: 'center',
+    height: '20%',
     fontStyle: 'italic',
     color: '#630094',
   },
   textentre2: {
     fontSize: 17,
-    alignItems: 'center',
-    height: 50,
+    marginBottom: 20,
     fontStyle: 'italic',
     color: '#630094',
   },

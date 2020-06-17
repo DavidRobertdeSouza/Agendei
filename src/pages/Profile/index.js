@@ -91,7 +91,7 @@ export default function Profile({navigation}) {
         <TextInput
           style={styles.input}
           placeholder="(00) 00000-0000"
-          placeholderTextColor="#FFF"
+          placeholderTextColor="#553592"
           textAlign={'center'}
           autoCorrect={false}
           onChangeText={() => {}}
@@ -100,7 +100,7 @@ export default function Profile({navigation}) {
         <TextInput
           style={styles.input}
           placeholder="exemplo@exemplo.com"
-          placeholderTextColor="#FFF"
+          placeholderTextColor="#553592"
           textAlign={'center'}
           autoCorrect={false}
           onChangeText={() => {}}
@@ -117,7 +117,7 @@ export default function Profile({navigation}) {
 const styles = StyleSheet.create({
   background: {
     flex: 1,
-    backgroundColor: '#630094',
+    backgroundColor: '#553592',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -138,11 +138,11 @@ const styles = StyleSheet.create({
     color: '#FFF',
   },
   input: {
-    backgroundColor: '#701f9a',
+    backgroundColor: '#FFF',
     width: '90%',
-    color: '#FFF',
+    color: '#553592',
     marginBottom: 15,
-    borderColor: '#630094',
+    borderColor: '#553592',
     fontStyle: 'italic',
     fontSize: 20,
     borderRadius: 20,
@@ -150,16 +150,18 @@ const styles = StyleSheet.create({
     padding: 6,
   },
   btnSubmit: {
-    backgroundColor: '#701f9a',
+    backgroundColor: '#FFF',
     width: '40%',
     height: 45,
     alignItems: 'center',
     marginTop: 15,
     justifyContent: 'center',
     borderRadius: 20,
+    borderColor: '#553592',
+    borderWidth: 2,
   },
   SubmitText: {
-    color: '#FFF',
+    color: '#553592',
     fontSize: 20,
     fontStyle: 'italic',
   },

@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#630094',
+    backgroundColor: '#553592',
     paddingHorizontal: 50,
   },
   containerLogo: {
@@ -108,7 +108,7 @@ const styles = StyleSheet.create({
     height: 130,
   },
   textInscreva: {
-    color: '#630094',
+    color: '#553592',
     marginBottom: '5%',
     fontSize: 25,
     fontStyle: 'italic',
@@ -117,7 +117,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFF',
     width: '80%',
     marginBottom: 10,
-    borderColor: '#630094',
+    borderColor: '#553592',
     color: '#222',
     fontStyle: 'italic',
     fontSize: 20,
@@ -126,7 +126,7 @@ const styles = StyleSheet.create({
     padding: 4,
   },
   btnSubmit: {
-    backgroundColor: '#630094',
+    backgroundColor: '#553592',
     width: '90%',
     height: 45,
     alignItems: 'center',

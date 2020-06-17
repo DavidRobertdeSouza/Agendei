@@ -27,7 +27,7 @@ export default function Inscreva({navigation}) {
 const styles = StyleSheet.create({
   background: {
     flex: 1,
-    backgroundColor: '#630094',
+    backgroundColor: '#553592',
     alignItems: 'center',
   },
   imagem: {

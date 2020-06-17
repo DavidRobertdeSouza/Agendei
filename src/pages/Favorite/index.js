@@ -12,14 +12,14 @@ const Favorite = () => {
       <Text style={styles.textCard}>Beleza e estética.</Text>
       <TouchableOpacity style={styles.Card} elavation={3}>
         <Image
-          style={styles.imageHeart}
+          style={styles.imageBeleza}
           source={require('../../assets/beleza.png')}
         />
       </TouchableOpacity>
       <Text style={styles.textCard}>Saúde e Bem Estar.</Text>
       <TouchableOpacity style={styles.Card} elavation={3}>
         <Image
-          style={styles.imageBeleza}
+          style={styles.imageHeart}
           source={require('../../assets/heart.png')}
         />
       </TouchableOpacity>
@@ -32,7 +32,7 @@ export default Favorite;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#630094',
+    backgroundColor: '#553592',
   },
   textAproveite: {
     fontSize: 18,
@@ -62,12 +62,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFF',
   },
   imageHeart: {
-    width: 140,
-    height: 150,
+    width: 120,
+    height: 110,
+    resizeMode: 'stretch',
   },
   imageBeleza: {
     position: 'absolute',
-    width: 150,
-    height: '100%',
+    width: 140,
+    height: 150,
   },
 });

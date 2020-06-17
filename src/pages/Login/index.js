@@ -122,7 +122,7 @@ export default function Login({navigation}) {
 const styles = StyleSheet.create({
   background: {
     flex: 1,
-    backgroundColor: '#630094',
+    backgroundColor: '#553592',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -149,19 +149,19 @@ const styles = StyleSheet.create({
     fontSize: 29,
     height: '20%',
     fontStyle: 'italic',
-    color: '#630094',
+    color: '#553592',
   },
   textentre2: {
     fontSize: 17,
     marginBottom: 20,
     fontStyle: 'italic',
-    color: '#630094',
+    color: '#553592',
   },
   input: {
     backgroundColor: '#FFF',
     width: '90%',
     marginBottom: 15,
-    borderColor: '#630094',
+    borderColor: '#553592',
     color: '#222',
     fontStyle: 'italic',
     fontSize: 20,
@@ -170,7 +170,7 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   btnSubmit: {
-    backgroundColor: '#630094',
+    backgroundColor: '#553592',
     width: '40%',
     height: 45,
     alignItems: 'center',

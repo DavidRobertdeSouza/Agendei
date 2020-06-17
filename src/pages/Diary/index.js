@@ -7,8 +7,12 @@ const Diary = () => {
   return (
     <View style={styles.container}>
       <Image
-        style={styles.imagem}
-        source={require('../../assets/construcao.png')}
+        style={styles.ImageCalendario1}
+        source={require('../../assets/calendario.png')}
+      />
+      <Image
+        style={styles.ImageCalendario2}
+        source={require('../../assets/calendario2.png')}
       />
     </View>
   );
@@ -21,9 +25,16 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: '#553592',
   },
-  imagem: {
-    justifyContent: 'center',
-    alignItems: 'center',
+  ImageCalendario1: {
+    width: 400,
+    height: 170,
+    resizeMode: 'stretch',
+  },
+  ImageCalendario2: {
+    width: 400,
+    height: 450,
+    resizeMode: 'stretch',
   },
 });

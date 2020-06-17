@@ -87,7 +87,7 @@ export default function Routs() {
     {
       tabBarOptions: {
         style:{
-          backgroundColor: '#630094',
+          backgroundColor: '#553592',
         },
         activeTintColor: '#000',
         inactiveTintColor: '#FFF',
@@ -113,7 +113,7 @@ export default function Routs() {
             ),
             headerTintColor: '#FFF',
             headerStyle: {
-              backgroundColor: '#630094',
+              backgroundColor: '#553592',
             },
             headerTitle:'',
             headerTitleAlign: 'center',
@@ -129,7 +129,7 @@ export default function Routs() {
             ),
             headerTintColor: '#FFF',
             headerStyle: {
-              backgroundColor: '#630094',
+              backgroundColor: '#553592',
             },
             headerTitle:'Meu Perfil',
             headerTitleAlign: 'center',
@@ -145,7 +145,7 @@ export default function Routs() {
             ),
             headerTintColor: '#FFF',
             headerStyle: {
-              backgroundColor: '#630094',
+              backgroundColor: '#553592',
             },
             headerTitle:'Minha Agenda',
             headerTitleAlign: 'center',
@@ -160,7 +160,7 @@ export default function Routs() {
             ),
             headerTintColor: '#FFF',
             headerStyle: {
-              backgroundColor: '#630094',
+              backgroundColor: '#553592',
             },
             headerTitle:'Pesquisa',
             headerTitleAlign: 'center',
@@ -175,7 +175,7 @@ export default function Routs() {
             ),
             headerTintColor: '#FFF',
             headerStyle: {
-              backgroundColor: '#630094',
+              backgroundColor: '#553592',
             },
             headerTitle:'Meus Favoritos',
             headerTitleAlign: 'center',
